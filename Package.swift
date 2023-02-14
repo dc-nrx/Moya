@@ -22,6 +22,7 @@ let package = Package(
     ],
     products: [
         .library(name: "Moya", targets: ["Moya"]),
+		.library(name: "MoyaLite", targets: ["MoyaLite"]),
         .library(name: "CombineMoya", targets: ["CombineMoya"]),
         .library(name: "ReactiveMoya", targets: ["ReactiveMoya"]),
         .library(name: "RxMoya", targets: ["RxMoya"])
@@ -44,6 +45,10 @@ let package = Package(
                 "Supporting Files/Info.plist"
             ]
         ),
+		.target(
+			name: "MoyaLite",
+			dependencies: []
+		),
         .target(
             name: "CombineMoya",
             dependencies: [
